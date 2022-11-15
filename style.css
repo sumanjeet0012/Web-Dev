@@ -1,0 +1,22 @@
+
+p{
+    color: brown
+}
+
+div p{
+    color:aqua
+}
+
+
+#secondpara{
+    color: blue
+}
+
+.test{
+    color: yellow
+}
+
+h1, p{
+    color: green
+
+}
