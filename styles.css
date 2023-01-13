@@ -1,0 +1,17 @@
+body {
+    background-color: #EAF6F6;
+}
+hr{
+    background-color: #EAF6F6;
+    border-style: none;
+    border-top-style:dotted ;
+    height: 0px;
+    /* width: 30%; */
+    border-color: grey;
+    border-width: 4px;
+}
+
+/* img{
+    height: 17%;
+    width: 17%;
+} */
