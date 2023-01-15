@@ -16,6 +16,22 @@ h1{
 h3{
     color: #66BFBF;
 }
+
+.submit{
+    background-color: #EB455F;
+    height: 33px;
+    width: 125px;
+    border-radius: 25px;
+}
+.submit:hover{
+    cursor: pointer;
+    /* display: none; */
+    margin-left: 200px;
+}
+
+
+
+
 /* a{
     color: #66BFBF;
 } */
