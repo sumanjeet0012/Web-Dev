@@ -28,6 +28,7 @@ h3{
 .top-container {
     background-color: #E4F9F5;
     padding-top: 100px;
+    position: relative;
 }
 
 .profile-pic{
