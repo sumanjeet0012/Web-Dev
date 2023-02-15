@@ -1,0 +1,82 @@
+.tajmahal{
+    background-image: url('https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80');
+}
+.beach{
+    background-image: url('https://images.unsplash.com/photo-1437719417032-8595fd9e9dc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+}
+.ocean{
+    background-image: url('https://images.unsplash.com/photo-1533713692156-f70938dc0d54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+}
+.forest{
+    background-image: url('https://images.unsplash.com/photo-1477061261587-eb9a05c18762?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80');
+}
+.snow{
+    background-image: url('https://images.unsplash.com/photo-1522434152110-15f9d8292543?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+}
+.desert{
+    background-image: url('https://images.unsplash.com/photo-1542401886-65d6c61db217?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+}
+
+body {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    /* background-color: #E90064; */
+    background-image: url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    /* background-repeat: no-repeat; */
+    
+}
+
+.container{
+    display: flex;
+    height: 90vh;
+    width: 90vw;
+}
+
+.panel{
+    /* align-items: center;
+    justify-content: center; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.5s ease-in 0.7s ;
+}
+
+h1{
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 2000;
+    /* text-align: center; */
+    /* width: 100%; */
+    margin: 0 40% ;
+    /* margin: 0 auto; */
+    font-family: 'Sacramento', cursive;
+    color: aqua;
+}
