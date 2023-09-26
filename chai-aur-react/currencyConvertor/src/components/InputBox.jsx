@@ -5,15 +5,15 @@ function InputBox({
     amount,
     onAmountChange,
     onCurrencyChange,
-    currencyOptions = [],
-    selectCurrency = "usd",
+    currencyOptions,
+    selectCurrency = "inr",
     amountDisable = false,
     currencyDisable,
     className = "",
 }) {
 
     const amountInputId = useId()
-   
+//    console.log(currencyOptions)
 
     return (
         <div className={`bg-white p-3 rounded-lg text-sm flex `}>
@@ -34,17 +34,28 @@ function InputBox({
             <div className="w-1/2 flex flex-wrap justify-end text-right">
                 <p className="text-black/40 mb-2 w-full">Currency Type</p>
                 <select
+                className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
+                value={selectCurrency}
+                onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
+                disabled={currencyDisable}
+                >
+                {currencyOptions.map(currency => (  
+                    <option key={currency} value={currency}>
+                    {currency}
+                    </option>
+                ))}
+                </select>
+                {/* <select
                     className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
                     value={selectCurrency}
                     onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value) }
                     disabled={currencyDisable}
                 >
                     
-                       {currencyOptions.map(() => {
-                        <option key={currency} value={currency}> {currency} </option>
-                       })}
+                       {currencyOptions.map((currency) => <option > {currency} </option>
+                       )}
                 
-                </select>
+                </select> */}
             </div>
         </div>
     );
