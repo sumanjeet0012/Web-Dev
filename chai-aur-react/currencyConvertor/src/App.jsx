@@ -9,7 +9,9 @@ function App() {
     const [to, setTo] = useState("inr")
     const [convertedAmount, setConvertedAmount] = useState(0)
     const currencyInfo = useCurrencyInfo(from)
+    // console.log(currencyInfo)
     const options = Object.keys(currencyInfo)
+    // console.log(options)
     const swap = () => {
         setFrom(to)
         setTo(from)
@@ -64,14 +66,20 @@ function App() {
                                 label="To"
                                 amount={convertedAmount}
                                 currencyOptions={options}
-                                onCurrencyChange={(currency) => setTo(currency)}
-                                selectCurrency={from}
+                                onCurrencyChange={(currency) => {
+                                    // console.log(currency)
+                                    return setTo(currency)
+                                    }
+                                }
+                                
+                                selectCurrency={to}
                                 amountDisable
 
                             />
                         </div>
                         <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">
                             Convert {from.toUpperCase()} to {to.toUpperCase}
+                            {/* {console.log(to)} */}
                         </button>
                     </form>
                 </div>
